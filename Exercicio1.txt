@@ -1,0 +1,8 @@
+1-sim
+2-Classes deginem o que algo pode fazer e guardarm enquanto uma instancia é um objeto específico que contém o seu próprio estado
+3-Variáveis, metodos e construtores
+4-é partilhado por todas as instancias da classe
+5-construtores
+6-private, acessivel dentro da classe
+7-public, acessivel de qualquer sítio
+8-internal, acessivel dentro do mesmo projeto
