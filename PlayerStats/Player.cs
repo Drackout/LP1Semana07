@@ -25,7 +25,7 @@ namespace PlayerStats
             get
             {
                 if(playedGames>0)
-                    return wonGames/playedGames;
+                    return (float)wonGames/(float)playedGames;
                 else 
                     return 0;
             }
