@@ -7,22 +7,43 @@ namespace BetterColorSpheres
 {
     public class Sphere
     {
-        private Color Cor  {get;}
-        private float Raio;
-        private int Atirado;
+        public Color Cor  {get;}
+        private float raio;
+        private int atirado;
         
         public Sphere(Color cor, int raio, int atirado = 0)
         {
             Cor = cor;
-            Raio = raio;
+            this.raio = raio;
         }
 
-        public void Pop()
+        public float Pop
+        {
+            set => raio = 0;
+        }
+        
+        public float Throw
         {
             set
             {
-                Raio = 0;
+                if (raio > 0)
+                    atirado++;
             }
+        }
+
+        public float GetRadius
+        {
+            get => raio;
+        }
+        
+        public int GetTimesThrown
+        {
+            get => atirado;
+        }
+        
+        public string GetColor
+        {
+            get => Cor.GetColor;
         }
     }
 }

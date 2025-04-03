@@ -26,9 +26,7 @@ namespace ColorSpheres
         public void Throw()
         {
             if (raio > 0)
-            {
                 atirado++;
-            }
         }
 
         public int GetTimesThrown() => atirado;
