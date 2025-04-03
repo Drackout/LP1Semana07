@@ -17,18 +17,15 @@ namespace BetterColorSpheres
             this.raio = raio;
         }
 
-        public float Pop
+        public void Pop()
         {
-            set => raio = 0;
+            raio = 0;
         }
         
-        public float Throw
+        public void Throw()
         {
-            set
-            {
-                if (raio > 0)
-                    atirado++;
-            }
+            if (raio > 0)
+                atirado++;
         }
 
         public float GetRadius

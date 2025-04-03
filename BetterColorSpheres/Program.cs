@@ -17,7 +17,9 @@ namespace BetterColorSpheres
             //MUITO MAIS CONFUSO
             //DE 36 LINHAS PARA 50... NÃO AJUDA EM NADA!!
             Sphere coise = new Sphere(cc1, 24);
-            coise.Throw = 0; 
+            coise.Throw(); 
+
+            Console.WriteLine(coise.GetTimesThrown);
 
         }
     }
