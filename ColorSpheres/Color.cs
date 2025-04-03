@@ -32,6 +32,7 @@ namespace ColorSpheres
         public byte GetGreen() => green;
         public byte GetBlue() => blue;
         public byte GetAlpha() => alpha;
+        public string GetColor() => $"{GetRed()},{GetGreen()},{GetBlue()},{GetAlpha()}";
 
         public byte GetGray()
         {
