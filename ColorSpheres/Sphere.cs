@@ -7,8 +7,10 @@ namespace ColorSpheres
 {
     public class Sphere
     {
-        public byte cor;
-        public int raio;
-        public int atirado;
+        private byte cor;
+        private int raio;
+        private int atirado;
+
+        public 
     }
 }
