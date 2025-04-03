@@ -11,9 +11,6 @@ namespace BetterColorSpheres
             Console.WriteLine(cc1.Red);
             Console.WriteLine(cc1.Green);
             Console.WriteLine(cc1.Blue);
-            Console.WriteLine(cc1.Alpha);
-            Console.WriteLine(cc1.GetColor);
-            Console.WriteLine(cc1.GetGray);
 
         }
     }

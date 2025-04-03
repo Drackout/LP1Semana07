@@ -28,8 +28,6 @@ namespace BetterColorSpheres
             Alpha = 255;
         }
 
-
-
         public string GetColor
         {
             get => $"{Red},{Green},{Blue},{Alpha}";
