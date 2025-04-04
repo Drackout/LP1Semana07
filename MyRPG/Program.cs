@@ -35,11 +35,13 @@ namespace MyRPG
             // Level: 1
             // XP: 0
             // Health: 100/100
+
             // Level: 3
             // XP: 2500
             // MaxHealth: 140
             // Health: 55/140
             // XP: 2502
+            
             // Level: 3
             // Health: 0
             // Health: 140/140

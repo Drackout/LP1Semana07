@@ -25,7 +25,19 @@ namespace MyRPG
 
         public int Level => (1+XP/1000);
 
-        public float Health => 100+(Level-1)*20;
+        public float Health
+        {
+            get => health;
+            set
+            {
+                if ((health+value) < 0)
+                    health = 0;
+                else if ((health+value) > MaxHealth)
+                    health = MaxHealth;
+            }
+        }
+
+        public float MaxHealth => 100+(Level-1)*20;
 
         public void TakeDamage(float damage)
         {
@@ -33,12 +45,14 @@ namespace MyRPG
             if (health > 0)
                 health = 0;
 
-            XP += (int)damage / 20;
+            xp += (int)damage / 20;
         }
 
         public Player(string name)
         {
-            
+            Name = name;
+            XP = 0;
+            Health = MaxHealth;
         }
 
 
