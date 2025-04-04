@@ -30,9 +30,9 @@ namespace MyRPG
             get => health;
             set
             {
-                if ((health+value) < 0)
+                if (value < 0)
                     health = 0;
-                else if ((health+value) > MaxHealth)
+                else if (value > MaxHealth)
                     health = MaxHealth;
             }
         }
@@ -43,7 +43,7 @@ namespace MyRPG
         {
             health -= damage;
             if (health > 0)
-                health = 0;
+                Health = 0;
 
             xp += (int)damage / 20;
         }
@@ -52,7 +52,7 @@ namespace MyRPG
         {
             Name = name;
             XP = 0;
-            Health = MaxHealth;
+            health = MaxHealth;
         }
 
 
